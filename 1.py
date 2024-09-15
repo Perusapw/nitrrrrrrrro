@@ -5,7 +5,7 @@
 import os
 import subprocess
 
-username = "fahrezizuhkri" #@param {type:"string"}
+username = "user" #@param {type:"string"}
 password = "root" #@param {type:"string"}
 
 print("Creating User and Setting it up")
@@ -75,9 +75,7 @@ import subprocess
 CRP = f"''.join({list(input('Enter the code copy from the go'+'ogle Rem'+'ote desk'+'top: '))})"
 CRP = eval(CRP)
 #@markdown Enter a Pin (more or equal to 6 digits)
-Pin = 333333 #@param {type: "integer"}
-time = 999999999999 #@param {type: "integer"}
-codelink = "DISPLAY= /opt/google/chrome-remote-desktop/start-host --code=\"4/0AQlEd8zoYdtgc0YHzwftKZrUUP4j14kwFOhim-dPmwLOFwXw8rLpARya1cklrhqPcpUzEw\" --redirect-url=\"https://remotedesktop.google.com/_/oauthredirect\" --name=$(hostname)" #@param {type: "string"}
+Pin = 123456 #@param {type: "integer"}
 
 class CRD:
     def __init__(self, user):
@@ -135,5 +133,3 @@ try:
         CRD(username)
 except NameError as e:
     print("'username' variable not found, Create a user first")
-// ssh 3DJ6C9WAqAm8GA3JsNCLPSUHc@sfo2.tmate.io
-// https://tmate.io/t/3DJ6C9WAqAm8GA3JsNCLPSUHc
